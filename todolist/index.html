@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    <div class="root-layout">
+        <div class="main-layout">
+            <header>
+                <h1>TODO LIST</h1>
+            </header>
+            <main>
+                <ul class="todo-list">
+                    <li class="todo-content-box">
+                        <div class="todo-content-date">
+                            날짜
+                        </div>
+                        <div class="todo-content-main">
+                            text
+                        </div>
+                        <div class="todo-content-footer">
+                            <button class="todo-edit-button">수정</button>
+                            <button class="todo-remove-button">삭제</button>
+                        </div>
+                    </li>
+                </ul>
+            </main>
+            <footer>
+                <button class="add-button">+</button>
+            </footer>
+        </div>
+        
+        <div class="modal-layout">
+            <div class="modal-header">
+                <div>
+                    추가하기
+                </div>
+                <div class="modal-main">
+                    <textarea class="todo-input"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button class="modal-edit-button">수정</button>
+                    <button class="modal-cancel-button">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/todolist.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
