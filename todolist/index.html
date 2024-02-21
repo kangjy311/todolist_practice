@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/modal.css">
 </head>
 <body>
     <div class="root-layout">
         <div class="main-layout">
             <header>
-                <h1>TODO LIST</h1>
+                <h1 class="main-title">TODO LIST</h1>
+                <p class="sub-title">기록해보세요</p>
             </header>
             <main>
                 <ul class="todo-list">
@@ -36,18 +39,19 @@
                 <button class="add-button">+</button>
             </footer>
         </div>
-        
-        <div class="modal-layout">
-            <div class="modal-header">
-                <div>
-                    추가하기
-                </div>
-                <div class="modal-main">
-                    <textarea class="todo-input"></textarea>
-                </div>
-                <div class="modal-footer">
-                    <button class="modal-edit-button">수정</button>
-                    <button class="modal-cancel-button">취소</button>
+        <div class="root-modal">
+            <div class="modal-layout">
+                <div class="modal-header">
+                    <div>
+                        추가하기
+                    </div>
+                    <div class="modal-main">
+                        <textarea class="todo-input"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="modal-button">수정</button>
+                        <button class="modal-button">취소</button>
+                    </div>
                 </div>
             </div>
         </div>
